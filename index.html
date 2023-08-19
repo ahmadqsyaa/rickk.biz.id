@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id" style="background-color:#313131;">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="shortcut icon" href="/asset/profil.jpg" />
+   <title>sites - rickk biz id</title>
+   <link rel="stylesheet" href="css/uikit.min.css" />
+   <style>
+   @font-face {
+         font-family: "Victor Mono";
+         src: url('/asset/VictorMono-Medium.otf');
+   }
+   * {
+      font-family: 'Victor Mono', monospace;
+   }
+   </style>
+   <script src="js/uikit.min.js"></script>
+   <script src="js/uikit-icons.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+   <!-- body -->
+    <div id="app" class="uk-container uk-margin-medium-top uk-container-large">
+        <div class="uk-border-rounded uk-background-secondary uk-card uk-card-body uk-light">
+           <!-- img --->
+           <div class="uk-margin-top uk-text-center">
+              <div class="uk-inline-clip uk-border-pill uk-transition-toggle" tabindex="0"> 
+              <img class="uk-transition-scale-up uk-card uk-card-hover  uk-border-pill uk-transition-opaque" src="/asset/profil.jpg" width="220" height="220" alt="profil">
+              </div>
+           </div>
+           <div class="uk-text-center uk-margin-top">
+              <span class="uk-text-large">Rick Qsyaerick</span>
+              <p class="">“lu bisa javascript lu punya kuasa”</p>
+           </div>
+           <div class="uk-flex uk-flex-between@l uk-margin-medium-top"> <!-- button -->
+           <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-top; target: .uk-button; delay: 450; repeat: true">
+              <div class="uk-flex uk-flex-column uk-flex-center@m">
+                 <a href="https://instagram.com/erck_qsyarck?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="instagram"></span> instagram</a>
+              </div> 
+              <div>
+                 <a href="https://www.facebook.com/erik.kusoy.71" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="facebook"></span> facebook</a>
+              </div> 
+              <div>
+                 <a href="https://youtube.com/@rickqsyaerick06" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="youtube"></span> youtube</a>
+              </div> 
+              <div>
+                 <a href="https://api.whatsapp.com/send/?phone=6283173888147&text=hallo rik saya butuh bantuan nih!&type=phone_number&app_absent=0" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="whatsapp"></span> whatsapp</a>
+              </div> 
+              <div>
+                 <a href="https://t.me/rickk1kch" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><img src="/asset/telegram-line.svg" uk-svg> telegram</a>
+              </div> 
+              <div>
+                 <a href="https://rickk.my.id" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="world"></span> website ii</a>
+              </div> 
+              <div>
+                 <a href="https://github.com/ahmadqsyaa" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="github-alt"></span> github</a>
+              </div> 
+              <div>
+                 <a href="https://snaptik.cyclic.app/download?url=YOUR_URL_VIDEO" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="code"></span> restapi</a>
+              </div> 
+              <div>
+                 <a href="mailto:rickqsyaerick06@rickk.biz.id" class="uk-button uk-border-rounded uk-width-1-1 uk-button-secondary uk-button-large"><span uk-icon="mail"></span> email</a>
+              </div> 
+             </div> 
+             </div>
+             <div class="uk-margin-medium-top" >
+             <input class="uk-checkbox" type="checkbox" uk-toggle="target: #ms; animation: uk-animation-fade"> <span id="in">hide</span>
+             </div>
+             <div id="ms" class="mes uk-margin-top">
+                   <div class="uk-margin">
+                      <input id="name" class="uk-border-rounded uk-input uk-margin-top" type="text" placeholder="your name" aria-label="Input"/>
+                   </div>
+                   <div class="uk-margin">
+                      <input id="email" class="uk-border-rounded uk-input" type="email" placeholder="your mail" aria-label="Input"/>
+                   </div>
+                   <div class="uk-margin">
+                      <textarea id="message" class="uk-border-rounded uk-textarea" rows="5" placeholder="message" aria-label="Textarea"></textarea>
+                   </div>
+                   <div class=" uk-margin">
+                      <button onclick="send()" class="uk-border-rounded uk-input" type="button">
+                         send 🚀
+                      </button>
+                   </div>
+             </div>
+             <div class="uk-margin-medium-top">
+                   <p id="res"></p>
+             </div>
+             <div class=""> <!-- footer -->
+                <p class="uk-text-center uk-margin-xlarge-top">COPYRIGHT ©
+                <span id="th"></span> ALL RIGHTS RESERVED RICK
+                </p>
+             </div>
+           </div>
+       </div>
+    </div>
+    <div class="uk-margin-medium-top">
+       <!-- kosong -->
+    </div>
+<script type="text/javascript">
+   var date = new Date();
+   var tahun = date.getFullYear();
+   document.getElementById("th").innerHTML = tahun;
+</script>
+<script type="text/javascript">
+var x = document.getElementById("name");
+var y = document.getElementById("email");
+var z = document.getElementById("message");
+var result = document.getElementById("res");
+function send() {
+if (y.value == "") {
+   //alert("name/email/message tidak boleh kosong")
+   x.value = "name tidak boleh kosong";
+   y.value = "email tidak boleh kosong";
+   z.value = "message tidak boleh kosong";
+   setTimeout(() => {
+   x.value = "";
+   y.value = "";
+   z.value = ""; 
+}, "1000");
+} else {
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(y.value.match(mailformat)) {
+   alert(`Terimakasih ${x.value}, Silahkan cek email mu`)
+   setTimeout(() => {
+   x.value = "";
+   y.value = "";
+   z.value = ""; 
+}, "100");
+} else {
+   y.value = "email invalid";
+   setTimeout(() => {
+   y.value = "";
+}, "1000");
+}
+//
+const urls = `https://api-rickk.ahmadqusyaeri.repl.co/api/v0/send-mail?name=${x.value}&email=${y.value}&message=${z.value}`;
+fetch(urls)
+.then(res => res.json())
+.then((res) => {
+  const data = res.status;
+}); 
+//
+}}
+</script>
+</body>
